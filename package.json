@@ -1,0 +1,24 @@
+{
+  "name": "tline",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Take notes with time aspect and view them on a timeline.",
+  "keywords": [],
+  "author": "axiomaticcrab",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "moment": "^2.17.1",
+    "mongoose": "^4.8.5",
+    "swagger-express-mw": "^0.1.0"
+  },
+  "devDependencies": {
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test"
+  }
+}
