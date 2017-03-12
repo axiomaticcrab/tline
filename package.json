@@ -5,20 +5,28 @@
   "description": "Take notes with time aspect and view them on a timeline.",
   "keywords": [],
   "author": "axiomaticcrab",
-  "license": "",
-  "main": "app.js",
+  "license": "ISC",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
     "express": "^4.12.3",
+    "jsonwebtoken": "^7.3.0",
+    "lodash": "^4.17.4",
     "moment": "^2.17.1",
     "mongoose": "^4.8.5",
-    "swagger-express-mw": "^0.1.0"
+    "validator": "^7.0.0",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
-    "should": "^7.1.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
     "supertest": "^1.0.0"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "test": "swagger project test"
   }
 }
